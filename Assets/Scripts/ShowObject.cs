@@ -1,22 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShowObject : MonoBehaviour
 {
     public GameObject showObject;
     public float showAtDistance = 0f;
-    public Transform fromTheObjcet;
-
-    Controller controller;
+    public Transform fromTheObject;
 
     private void OnMouseOver()
     {
-        if (fromTheObjcet)
+        if (fromTheObject)
         {
-            Vector3 offset = fromTheObjcet.position - transform.position;
+            Vector3 offset = fromTheObject.position - transform.position;
             float sqrLen=offset.sqrMagnitude;
-            if(sqrLen<showAtDistance  *showAtDistance)
+            if(sqrLen<showAtDistance*showAtDistance)
             {
                 showObject.SetActive(true);
                 Cursor.lockState = CursorLockMode.Confined;
@@ -26,23 +22,22 @@ public class ShowObject : MonoBehaviour
 
     private void OnMouseExit()
     {
-       
             Cursor.lockState = CursorLockMode.Locked;
             showObject.SetActive(false);
-        
     }
 
     private void Update()
     {
-        if(fromTheObjcet)
-        {
-            Vector3 offset = fromTheObjcet.position - transform.position;
-            float sqrLen = offset.sqrMagnitude;
-            if (sqrLen > showAtDistance * showAtDistance)
-            {
-                showObject.SetActive(false);
+        //if(fromTheObject)
+        //{
+        //    Vector3 offset = fromTheObject.position - transform.position;
+        //    float sqrLen = offset.sqrMagnitude;
+        //    if (sqrLen > showAtDistance * showAtDistance)
+        //    {
+        //        showObject.SetActive(false);
                 
-            }
-        }
+        //    }
+        //}
+        Cursor.visible = false;
     }
 }
