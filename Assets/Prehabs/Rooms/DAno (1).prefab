@@ -2297,7 +2297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showObject: {fileID: 0}
   showAtDistance: 7
-  fromTheObjcet: {fileID: 0}
+  fromTheObject: {fileID: 0}
 --- !u!1 &7985109105404330639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3467,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.21960784}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.21960784}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4300,7 +4300,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.21960784}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.21960784}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}

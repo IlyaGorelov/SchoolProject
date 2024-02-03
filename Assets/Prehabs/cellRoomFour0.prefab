@@ -971,7 +971,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.21960784}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.21960784}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   inputField2: {fileID: 3935356434436025234}
   inputField3: {fileID: 3935356434224757005}
   gameObj: {fileID: 3935356434981255441}
-  code: {fileID: 3935356434981255449}
+  divideCode: {fileID: 0}
   galkaCode: {fileID: 0}
   parentObject: {fileID: 0}
 --- !u!1 &3935356435421946503
