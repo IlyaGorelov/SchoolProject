@@ -28,7 +28,7 @@ EditorBuildSettings:
     guid: 985e261f75a69a940b79756d508f889b
   - enabled: 1
     path: Assets/Scenes/TaskMovement.unity
-    guid: 169afa52117f1454e8c53490b4d6064f
+    guid: b6c9d4836d97d1742b48b673b31cc81c
   - enabled: 1
     path: Assets/Scenes/TaskMass.unity
     guid: 60731dce255977a499af19de055e62bc

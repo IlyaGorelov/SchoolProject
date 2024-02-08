@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Galka : MonoBehaviour
 {
     public GameObject _galka;
-    public chekingCode code;
+    public ChekingCode code;
     public int isGalka;
     private void Awake()
     {

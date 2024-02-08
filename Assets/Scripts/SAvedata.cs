@@ -8,14 +8,14 @@ public class SAvedata : MonoBehaviour
     public TMP_InputField inputField2;
     public TMP_InputField inputField3;
     public GameObject gameObj;
-    public delenieCode divideCode;
+    public Fraction divideCode;
     public Galka galkaCode;
     [SerializeField] GameObject parentObject;
 
     private void Awake()
     {
         if (PlayerPrefs.GetInt(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "delenie") == 1)
-            divideCode.delenObj.SetActive(true);
+            divideCode.FractionObject.SetActive(true);
         inputField1.text = PlayerPrefs.GetString(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "inputfield1", inputField1.text);
         inputField2.text = PlayerPrefs.GetString(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "inputfield2", inputField2.text);
         inputField3.text = PlayerPrefs.GetString(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "inputfield3", inputField3.text);
@@ -29,7 +29,7 @@ public class SAvedata : MonoBehaviour
             inputField1.text = null;
             inputField2.text = null;
             inputField3.text = null;
-            divideCode.isAcive = 0;
+            divideCode.isActive = 0;
             galkaCode.isGalka = 0;
         }
     }
@@ -38,6 +38,6 @@ public class SAvedata : MonoBehaviour
         PlayerPrefs.SetString(SceneManager.GetActiveScene().buildIndex+parentObject.name + gameObj.name + "inputfield1", inputField1.text);
         PlayerPrefs.SetString(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "inputfield2", inputField2.text);
         PlayerPrefs.SetString(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "inputfield3", inputField3.text);
-        PlayerPrefs.SetInt(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "delenie", divideCode.isAcive);
+        PlayerPrefs.SetInt(SceneManager.GetActiveScene().buildIndex + parentObject.name + gameObj.name + "delenie", divideCode.isActive);
     }
 }

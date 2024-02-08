@@ -18,6 +18,7 @@ public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
 
+    public bool isTaken = false;
     #region Camera Movement Variables
 
     public Camera playerCamera;
@@ -99,7 +100,7 @@ public class FirstPersonController : MonoBehaviour
     public float jumpPower = 5f;
 
     // Internal Variables
-    private bool isGrounded = false;
+    public bool isGrounded = false;
 
     #endregion
 
@@ -361,6 +362,14 @@ public class FirstPersonController : MonoBehaviour
         if(enableHeadBob)
         {
             HeadBob();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F1) && cameraCanMove)
+        {
+            cameraCanMove = false;
+        }else if(Input.GetKeyDown(KeyCode.F1) && !cameraCanMove)
+        {
+            cameraCanMove = true;
         }
     }
 

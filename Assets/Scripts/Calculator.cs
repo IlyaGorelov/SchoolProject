@@ -1,13 +1,9 @@
-
 using UnityEngine;
 
-public class calcAnim : MonoBehaviour
+public class Calculator : MonoBehaviour
 {
     public Transform calc;
- public  bool anim=false;
-    
-    
-    // Update is called once per frame
+    public bool anim = false;
 
     public void AS()
     {
@@ -41,13 +37,11 @@ public class calcAnim : MonoBehaviour
             }
             else if (anim == true)
             {
-                Debug.Log("rus");
+                Debug.Log("Calculator");
                 GetComponent<Animator>().SetBool("Ap", !anim);
                 GetComponent<Animator>().SetBool("Ex", anim);
                 anim = false;
             }
         }
     }
-
-
 }

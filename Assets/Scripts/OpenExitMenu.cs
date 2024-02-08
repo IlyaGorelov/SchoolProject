@@ -7,11 +7,12 @@ public class OpenExitMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)&& !isOpen)
+        if(Input.GetKeyDown(KeyCode.Escape)&& !isOpen && !ToSolution.isSoluting)
         {
             gameObject.SetActive(true);
             isOpen = true;
-        }else if(Input.GetKeyDown(KeyCode.Escape)&&isOpen)
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape)&&isOpen)
         {
             gameObject.SetActive(false);
             isOpen = false;

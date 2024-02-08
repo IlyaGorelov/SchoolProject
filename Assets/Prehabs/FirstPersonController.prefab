@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTaken: 0
   playerCamera: {fileID: 9218705737830222786}
   fov: 60
   invertCamera: 0
@@ -628,7 +629,7 @@ MonoBehaviour:
   playerCanMove: 1
   walkSpeed: 5
   maxVelocityChange: 10
-  enableSprint: 1
+  enableSprint: 0
   unlimitedSprint: 1
   sprintKey: 304
   sprintSpeed: 7
@@ -645,6 +646,7 @@ MonoBehaviour:
   enableJump: 0
   jumpKey: 32
   jumpPower: 5
+  isGrounded: 0
   enableCrouch: 0
   holdToCrouch: 1
   crouchKey: 306

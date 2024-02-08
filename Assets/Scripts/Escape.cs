@@ -10,6 +10,7 @@ public class Escape : MonoBehaviour
     bool isActive = false;
     [SerializeField] Slider sensetivity;
     public GameObject loadingImage;
+    [SerializeField] FirstPersonController firstPersonController;
     private void Start()
     {
         exitMenu.SetActive(false);
@@ -17,8 +18,9 @@ public class Escape : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)  && !isActive)
+        if (Input.GetKeyDown(KeyCode.Escape)  && !isActive && firstPersonController.isGrounded)
         {
+            Debug.Log(ToSolution.isSoluting);
             exitMenu.SetActive(true);
             isActive = true;
             Cursor.lockState = CursorLockMode.Confined;

@@ -7,7 +7,7 @@ public class ShowPersent : MonoBehaviour
     public float RoomOnePercent;
     public float RoomTwoPercent;
     public float RoomThreePercent;
-    public float RoomFourPercent;
+    public int RoomFourPercent;
     public float RoomFivePercent;
     public TextMeshProUGUI PercentOne;
     public TextMeshProUGUI PercentTwo;
@@ -18,7 +18,7 @@ public class ShowPersent : MonoBehaviour
     
    private void Start()
     {
-      RoomOnePercent= PlayerPrefs.GetFloat("RoomOnePersent");
+      RoomOnePercent= PlayerPrefs.GetInt("Movement");
        double RoomOnePercentDouble = RoomOnePercent;
         RoomOnePercentDouble *= 10;
         PercentOne.text =  RoomOnePercentDouble+ " %";
@@ -39,7 +39,7 @@ public class ShowPersent : MonoBehaviour
         if (RoomThreePercentDouble == 100)
             PercentThree.color = Color.green;
 
-        RoomFourPercent = PlayerPrefs.GetFloat("RoomFourPersent");
+        RoomFourPercent = PlayerPrefs.GetInt("Pressure");
         double RoomFourPercentDouble = RoomFourPercent;
         RoomFourPercentDouble = RoomFourPercentDouble / 9 * 100;
         PercentFour.text = Math.Round(RoomFourPercentDouble, 0) + " %";

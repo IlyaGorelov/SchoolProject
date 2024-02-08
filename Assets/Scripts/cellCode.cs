@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class cellCode : MonoBehaviour
 {
     public GameObject text;
-    public chekingCode code;
+    public ChekingCode code;
     [Header("InputField")]
     public TMP_InputField inputField1;
     public TMP_InputField inputField2;
