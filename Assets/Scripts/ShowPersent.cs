@@ -25,7 +25,7 @@ public class ShowPersent : MonoBehaviour
         if(RoomOnePercentDouble==100)
             PercentOne.color=Color.green;
 
-        RoomTwoPercent = PlayerPrefs.GetFloat("RoomTwoPersent");
+        RoomTwoPercent = PlayerPrefs.GetInt("Mass");
         double RoomTwoPercentDouble = RoomTwoPercent;
         RoomTwoPercentDouble = RoomTwoPercentDouble/6*100;
         PercentTwo.text = Math.Round(RoomTwoPercentDouble,0) + " %";
