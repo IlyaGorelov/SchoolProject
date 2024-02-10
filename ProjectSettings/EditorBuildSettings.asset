@@ -34,11 +34,11 @@ EditorBuildSettings:
     guid: 2cad343fddac60548bc5e10b93adc165
   - enabled: 1
     path: Assets/Scenes/TaskForce.unity
-    guid: 631ce7082da6c6b449be30fbe70cbcf4
+    guid: 92da59a3c71d6b64895d7a309c1f52e0
   - enabled: 1
     path: Assets/Scenes/TaskPressure.unity
     guid: aaa7a4d3a2f974a4ea464de1b58d455b
   - enabled: 1
     path: Assets/Scenes/TaskArbeit.unity
-    guid: 171b529aa69b0a644bcf82bf60615f06
+    guid: f1e9334974dca824abc39d86c8e9dde5
   m_configObjects: {}

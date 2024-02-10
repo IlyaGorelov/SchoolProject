@@ -25,6 +25,7 @@ public class ToSolution : MonoBehaviour
         playerSpeed = controller.walkSpeed;
         controller.walkSpeed = 0;
         rb.useGravity = false;
+        Debug.Log("soluting..");
 
     }
 
@@ -35,7 +36,7 @@ public class ToSolution : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
         }
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && isSoluting)
         {
             isSoluting = false;
             solutionObject.SetActive(true);

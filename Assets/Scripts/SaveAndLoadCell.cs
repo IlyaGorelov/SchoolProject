@@ -28,6 +28,7 @@ public class SaveAndLoadCell : MonoBehaviour
             numerator.text = PlayerPrefs.GetString(ID + "numerator");
             denominator.text = PlayerPrefs.GetString(ID + "denominator");
             Debug.Log("ID is" + ID);
+            fraction.isActive = PlayerPrefs.GetInt(ID + "FractionActive");
             if (fraction.isActive == 1)
             {
                 fraction.FractionObject.SetActive(true);

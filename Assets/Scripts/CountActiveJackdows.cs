@@ -30,7 +30,7 @@ public class CountActiveJackdows : MonoBehaviour
 
             case 9:
                 CompleteTasks.Force = count;
-                PlayerPrefs.SetInt("Force", CompleteTasks.Force);
+                PlayerPrefs.SetInt("Force", count);
                 break;
 
             case 10:
@@ -43,6 +43,6 @@ public class CountActiveJackdows : MonoBehaviour
                 PlayerPrefs.SetInt("Arbeit", CompleteTasks.Arbeit);
                 break;
         }
-        Debug.Log(count);
+        Debug.Log(CompleteTasks.Force);
     }
 }

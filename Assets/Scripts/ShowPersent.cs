@@ -32,7 +32,7 @@ public class ShowPersent : MonoBehaviour
         if (RoomTwoPercentDouble == 100)
             PercentTwo.color = Color.green;
 
-        RoomThreePercent = PlayerPrefs.GetFloat("RoomThreePersent");
+        RoomThreePercent = PlayerPrefs.GetInt("Force");
         double RoomThreePercentDouble = RoomThreePercent;
         RoomThreePercentDouble = RoomThreePercentDouble / 6 * 100;
         PercentThree.text = Math.Round(RoomThreePercentDouble, 0) + " %";
@@ -46,7 +46,7 @@ public class ShowPersent : MonoBehaviour
         if (RoomFourPercentDouble == 100)
             PercentFour.color = Color.green;
 
-        RoomFivePercent = PlayerPrefs.GetFloat("RoomFivePersent");
+        RoomFivePercent = PlayerPrefs.GetInt("Arbeit");
         double RoomFivePercentDouble = RoomFivePercent;
         RoomFivePercentDouble = RoomFivePercentDouble / 9 * 100;
         PercentFive.text = Math.Round(RoomFivePercentDouble, 0) + " %";
