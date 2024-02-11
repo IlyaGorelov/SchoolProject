@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3187d53e101d91546995c4f1115a0638, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9218705738682655066, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9218705738682655066, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: m_LocalPosition.x
@@ -212,11 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9218705738682655068, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: crosshairColor.b
-      value: 0
+      value: 0.00427413
       objectReference: {fileID: 0}
     - target: {fileID: 9218705738682655068, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: crosshairColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9218705738682655068, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: crosshairColor.r
@@ -5772,7 +5772,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1672678363566774766, guid: 2764601e374de7c4aa5a1fe54acf50f9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1672678363566774766, guid: 2764601e374de7c4aa5a1fe54acf50f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7955,7 +7955,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617324102
 GameObject:
@@ -9584,7 +9584,7 @@ Transform:
   - {fileID: 1090656856}
   - {fileID: 1230733337}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1868448835
 PrefabInstance:

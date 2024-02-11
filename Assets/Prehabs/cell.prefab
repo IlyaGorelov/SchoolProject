@@ -78,7 +78,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4.9999986, y: -8.58}
-  m_SizeDelta: {x: 13.89, y: 21.08}
+  m_SizeDelta: {x: 17.78, y: 21.92}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1686389939527765519
 CanvasRenderer:
@@ -281,7 +281,7 @@ RectTransform:
   m_GameObject: {fileID: 1686389939622375117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.00000192}
-  m_LocalScale: {x: 1.8687227, y: 0.530996, z: 0.74368143}
+  m_LocalScale: {x: 3.248027, y: 0.530996, z: 0.74368143}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1686389939527574556}
@@ -1541,7 +1541,7 @@ MonoBehaviour:
   HorizontalLine: {fileID: 1686389939622375117}
   FractionObject: {fileID: 1686389939527574563}
   a: 0
-  cellBody: {fileID: 1686389939527765517}
+  denomerator: {fileID: 1686389939980829861}
   numerator: {fileID: 1686389939635312186}
   isActive: 0
-  denomerator: {fileID: 1686389939980829861}
+  cellBody: {fileID: 1686389939527765517}

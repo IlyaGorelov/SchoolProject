@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Escape : MonoBehaviour
 {
     [SerializeField] GameObject exitMenu;
-    bool isActive = false;
+    public bool isPause = false;
     [SerializeField] Slider sensetivity;
     [SerializeField] Slider fov;
     [SerializeField] Slider velocity;
@@ -46,24 +46,24 @@ public class Escape : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isActive && firstPersonController.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPause && firstPersonController.isGrounded)
         {
             Debug.Log(ToSolution.isSoluting);
             exitMenu.SetActive(true);
-            isActive = true;
+            isPause = true;
             firstPersonController.cameraCanMove = false;
-            if (isActive)
+            if (isPause)
             {
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
             }
             Time.timeScale = 0.0f;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && isActive)
+        else if (Input.GetKeyDown(KeyCode.Escape) && isPause)
         {
             // PlayerPrefs.SetFloat("sensetivity", cam.mouseSensevity);
             exitMenu.SetActive(false);
-            isActive = false;
+            isPause = false;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Time.timeScale = 1.0f;
@@ -81,7 +81,7 @@ public class Escape : MonoBehaviour
         Debug.Log(sensetivity.value);
     }
 
-    public void ChangeFov ()
+    public void ChangeFov()
     {
         firstPersonController.fov = fov.value;
         PlayerPrefs.SetFloat("Fov", firstPersonController.fov);

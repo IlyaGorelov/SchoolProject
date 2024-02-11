@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 1013897353519246165}
   m_Layer: 0
   m_Name: Escape
-  m_TagString: Untagged
+  m_TagString: Escape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,6 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitMenu: {fileID: 0}
+  isPause: 0
   sensetivity: {fileID: 0}
   fov: {fileID: 6066457818135887068}
   velocity: {fileID: 1091403812083566140}
@@ -387,7 +388,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 101
   m_TargetDisplay: 0
 --- !u!114 &1013897353764350038
 MonoBehaviour:

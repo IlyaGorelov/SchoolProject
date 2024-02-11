@@ -6,7 +6,7 @@ public class CountActiveJackdows : MonoBehaviour
     [SerializeField] GameObject[] Jackdows;
     int count = 0;
    
-    private void OnDestroy()
+    public void OnExit()
     {
         foreach (GameObject j in Jackdows)
         {

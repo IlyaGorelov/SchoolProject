@@ -5,7 +5,6 @@ public class ToSolution : MonoBehaviour
 
     [SerializeField] GameObject playerPosition;
     public Transform playerNextPos;
-    public float speed;
     public static bool isSoluting = false;
     [SerializeField] GameObject solutionObject;
     [SerializeField] GameObject TextInputLMB;
@@ -14,7 +13,7 @@ public class ToSolution : MonoBehaviour
     float playerSpeed;
     private void Start()
     {
-        rb=playerPosition.GetComponent<Rigidbody>();
+        rb = playerPosition.GetComponent<Rigidbody>();
     }
     public void ToSolut()
     {
@@ -22,11 +21,12 @@ public class ToSolution : MonoBehaviour
         solutionObject.SetActive(false);
         TextInputLMB.SetActive(false);
         playerPosition.transform.position = playerNextPos.position;
-        playerSpeed = controller.walkSpeed;
-        controller.walkSpeed = 0;
+
+        controller.playerCanMove = false;
+        rb.velocity = Vector3.zero;
         rb.useGravity = false;
         Debug.Log("soluting..");
-
+        controller.enableHeadBob = false;
     }
 
     private void Update()
@@ -36,14 +36,15 @@ public class ToSolution : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
         }
-        if(Input.GetKeyDown(KeyCode.Escape) && isSoluting)
+        if (Input.GetKeyDown(KeyCode.Escape) && isSoluting)
         {
             isSoluting = false;
             solutionObject.SetActive(true);
-            controller.walkSpeed = playerSpeed;
+            controller.playerCanMove = true;
             rb.useGravity = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            controller.enableHeadBob = true;
         }
     }
 }

@@ -138,8 +138,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.369, y: -3.824}
-  m_SizeDelta: {x: 20.705, y: 32.742}
+  m_AnchoredPosition: {x: -3.208, y: -3.824}
+  m_SizeDelta: {x: 22.383, y: 32.742}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3938012546260019242
 CanvasRenderer:
@@ -297,8 +297,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0261451, y: 1.7846005, z: 0.87989366}
-  m_Center: {x: 0.16000003, y: 0.64, z: 0.098869085}
+  m_Size: {x: 1.0261451, y: 1.7846005, z: 0.69564766}
+  m_Center: {x: 0.16000003, y: 0.64, z: 0.0067460686}
 --- !u!95 &3938012544764417990
 Animator:
   serializedVersion: 5
