@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class cellCode : MonoBehaviour
@@ -10,14 +10,17 @@ public class cellCode : MonoBehaviour
     public TMP_InputField inputField2;
     public TMP_InputField inputField3;
 
-    
+    private void Update()
+    {
+        ReplaceText();
+    }
     public void Create()
     {
         text.SetActive(true);
     }
     public void Cheaking()
     {
-        foreach(char t in inputField1.text)
+        foreach (char t in inputField1.text)
         {
             if (t == '/')
                 code.i++;
@@ -32,8 +35,14 @@ public class cellCode : MonoBehaviour
             if (t == '/')
                 code.q++;
         }
-        
     }
 
-
+    void ReplaceText ()
+    {
+        inputField1.text = inputField1.text.Replace(":", "^");
+        inputField1.text = inputField1.text.Replace("p1", "ρ");
+        inputField1.text = inputField1.text.Replace("n1", "η");
+        inputField1.text = inputField1.text.Replace("m1", "μ");
+        inputField1.text = inputField1.text.Replace("v1", "ν");
+    }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -65,4 +66,11 @@ public class ChekingCode : MonoBehaviour
             result.text = result.text;
         }
     }
+
+    private void OnDisable()
+    {
+        result.text = "";
+    }
+
 }
+

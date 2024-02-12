@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 1686389939853125073}
   - component: {fileID: 1686389939635312186}
   - component: {fileID: 1686389939853125072}
+  - component: {fileID: 7908605655379611858}
   m_Layer: 5
   m_Name: numerator
   m_TagString: Untagged
@@ -597,6 +598,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &7908605655379611858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686389939853125078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea91c9bcbb8bab144a88e1cf760f3578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1686389940187294182
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +945,7 @@ GameObject:
   - component: {fileID: 1686389939980829856}
   - component: {fileID: 1686389939980829861}
   - component: {fileID: 1686389939980829863}
+  - component: {fileID: 9102466304582668948}
   m_Layer: 5
   m_Name: denomerator
   m_TagString: Untagged
@@ -1134,6 +1148,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &9102466304582668948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686389940463765930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea91c9bcbb8bab144a88e1cf760f3578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1686389940777203375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1552,7 @@ MonoBehaviour:
   numerator: {fileID: 1686389939635312186}
   denominator: {fileID: 1686389939980829861}
   fraction: {fileID: 1686389941237499059}
+  ID: 
 --- !u!114 &1686389941237499059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1538,7 +1565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef182a604f7c9d46a35812943e740cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalLine: {fileID: 1686389939622375117}
   FractionObject: {fileID: 1686389939527574563}
   a: 0
   denomerator: {fileID: 1686389939980829861}

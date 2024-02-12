@@ -2803,12 +2803,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20000
+  m_fontSize: 32767
   m_fontSizeBase: 20000
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 32767
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -13640,7 +13640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651976447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 539, y: -42, z: 1}
+  m_LocalPosition: {x: 539, y: -28, z: 1}
   m_LocalScale: {x: 0.37232, y: 0.37232, z: 0.37232}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27953,8 +27953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1447.6804, y: -775}
-  m_SizeDelta: {x: 858940, y: 204105.81}
+  m_AnchoredPosition: {x: -1447.6804, y: -976.42664}
+  m_SizeDelta: {x: 858940, y: 427612.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310716989
 MonoBehaviour:
@@ -28524,7 +28524,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 126063453}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -37653,8 +37653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.76999664, y: 0}
+  m_SizeDelta: {x: 37.89, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754591195
 MonoBehaviour:

@@ -3520,6 +3520,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938012544764417988, guid: 508bde5cb63e8ae418b0f7063e43342d, type: 3}
+      propertyPath: m_Size.z
+      value: 0.759108
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938012544764417988, guid: 508bde5cb63e8ae418b0f7063e43342d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.03847626
+      objectReference: {fileID: 0}
     - target: {fileID: 3938012544764417989, guid: 508bde5cb63e8ae418b0f7063e43342d, type: 3}
       propertyPath: showObject
       value: 
@@ -13575,13 +13583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abce09093be8004aaacbc48836ff773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delen: {fileID: 7985109106026987486}
-  delenObj: {fileID: 7985109106091959131}
-  a: 0.12
-  text1: {fileID: 7985109106859905874}
-  text2: {fileID: 7985109106092544423}
-  isAcive: 0
-  text3: {fileID: 7985109106072619345}
 --- !u!114 &7985109105727624818
 MonoBehaviour:
   m_ObjectHideFlags: 0

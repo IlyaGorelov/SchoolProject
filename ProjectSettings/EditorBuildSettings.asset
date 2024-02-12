@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TaskArbeit.unity
     guid: f1e9334974dca824abc39d86c8e9dde5
+  - enabled: 1
+    path: Assets/Scenes/BadQuality.unity
+    guid: d139ba51abecbe148b2b5a77cdb89802
   m_configObjects: {}

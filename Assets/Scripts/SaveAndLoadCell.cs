@@ -9,13 +9,14 @@ public class SaveAndLoadCell : MonoBehaviour
     [SerializeField] TMP_InputField numerator;
     [SerializeField] TMP_InputField denominator;
     [SerializeField] Fraction fraction;
-    string ID;
+   public string ID;
     bool canDO = true;
     private void OnDisable()
     {
         cellBody.text = "";
         denominator.text = "";
         numerator.text = "";
+        fraction.FractionObject.SetActive(false);
         canDO = true;
     }
     void Update()
@@ -28,7 +29,6 @@ public class SaveAndLoadCell : MonoBehaviour
             numerator.text = PlayerPrefs.GetString(ID + "numerator");
             denominator.text = PlayerPrefs.GetString(ID + "denominator");
             Debug.Log("ID is" + ID);
-            fraction.isActive = PlayerPrefs.GetInt(ID + "FractionActive");
             if (fraction.isActive == 1)
             {
                 fraction.FractionObject.SetActive(true);
@@ -48,6 +48,5 @@ public class SaveAndLoadCell : MonoBehaviour
         PlayerPrefs.SetString(ID + "cellBody", cellBody.text);
         PlayerPrefs.SetString(ID + "numerator", numerator.text);
         PlayerPrefs.SetString(ID + "denominator", denominator.text);
-        PlayerPrefs.SetInt(ID + "FractionActive", fraction.isActive);
     }
 }
