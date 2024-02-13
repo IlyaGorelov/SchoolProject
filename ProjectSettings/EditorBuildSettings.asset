@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/start.unity
     guid: 2029cd3884208b8439099c7ef9170c9a
   - enabled: 1
-    path: Assets/Scenes/SampleScene 2.unity
+    path: Assets/Scenes/NormalQuality.unity
     guid: 0f4e212fb487a8349a16561100f60416
   - enabled: 1
     path: Assets/Scenes/TMovement.unity
@@ -44,4 +44,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadQuality.unity
     guid: d139ba51abecbe148b2b5a77cdb89802
+  - enabled: 1
+    path: Assets/Scenes/TMovementBad.unity
+    guid: 4af1dd3a26eeafe48a085685dbb06ecd
+  - enabled: 1
+    path: Assets/Scenes/TMassBad.unity
+    guid: e73be79dd38923744a42bfbb85459f57
+  - enabled: 1
+    path: Assets/Scenes/TForceBad.unity
+    guid: f68823687ac613140ad6b4832fb4e710
+  - enabled: 1
+    path: Assets/Scenes/TArbeitBad.unity
+    guid: 2c849248cde33c643a756baee56e4d8a
+  - enabled: 1
+    path: Assets/Scenes/TPressureBad.unity
+    guid: ceef6543a1e5d08489be505811d353b0
+  - enabled: 1
+    path: Assets/Scenes/TaskMovementBad.unity
+    guid: 7d2634cfb628c4f489ea440226c37a27
+  - enabled: 1
+    path: Assets/Scenes/TaskMassBad.unity
+    guid: df52894c1c4a5e543bb795cfc75f6fcb
+  - enabled: 1
+    path: Assets/Scenes/TaskForceBad.unity
+    guid: 0df8687b393774642a9f61d7c75c09c2
+  - enabled: 1
+    path: Assets/Scenes/TaskPressureBad.unity
+    guid: 2b47f7f7eb490a1438e61d53115b427b
+  - enabled: 1
+    path: Assets/Scenes/TaskArbeitBad.unity
+    guid: aabd916082b26a946ba0440bf6e44ede
+  - enabled: 1
+    path: Assets/Scenes/VeryBadQuality.unity
+    guid: 30fc1e9650e155649a7c080beb76cdec
   m_configObjects: {}
