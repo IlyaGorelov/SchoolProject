@@ -1,7 +1,5 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ChekingCode : MonoBehaviour
 {
@@ -18,7 +16,7 @@ public class ChekingCode : MonoBehaviour
     public static string inputField2;
     public static string inputField3;
     public ShowPersent room1;
-    int canAdd=1;
+    private int canAdd = 1;
 
     private void Update()
     {
@@ -71,6 +69,5 @@ public class ChekingCode : MonoBehaviour
     {
         result.text = "";
     }
-
 }
 

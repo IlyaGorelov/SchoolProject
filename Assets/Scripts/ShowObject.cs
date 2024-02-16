@@ -5,13 +5,14 @@ public class ShowObject : MonoBehaviour
     public GameObject showObject;
     public float showAtDistance = 0f;
     public Transform fromTheObject;
-    Escape escape;
+    private Escape escape;
 
     private void Start()
     {
         Cursor.visible = false;
         escape = GameObject.FindGameObjectWithTag("Escape").GetComponent<Escape>();
     }
+
     private void OnMouseOver()
     {
         if (fromTheObject && !escape.isPause)
@@ -32,7 +33,6 @@ public class ShowObject : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             showObject.SetActive(false);
-
         }
     }
 }

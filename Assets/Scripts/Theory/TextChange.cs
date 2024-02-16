@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class TextChange : MonoBehaviour
 {
-    [SerializeField] string ChangeTo;
-    string ChangeFrom;
-    [SerializeField] TextMeshProUGUI text;
-    bool isChanged = false;
+    [SerializeField] private string ChangeTo;
+    private string ChangeFrom;
+    [SerializeField] private TextMeshProUGUI text;
+    private bool isChanged = false;
     public void Change()
     {
         if (!isChanged)

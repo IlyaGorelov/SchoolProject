@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class cellCode : MonoBehaviour
+public class CellCode : MonoBehaviour
 {
     public GameObject text;
     public ChekingCode code;
@@ -37,7 +37,7 @@ public class cellCode : MonoBehaviour
         }
     }
 
-    void ReplaceText ()
+    void ReplaceText()
     {
         inputField1.text = inputField1.text.Replace(":", "^");
         inputField1.text = inputField1.text.Replace("p1", "ρ");

@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Escape : MonoBehaviour
 {
-    [SerializeField] GameObject exitMenu;
+    [SerializeField] private GameObject exitMenu;
     public bool isPause = false;
-    [SerializeField] Slider sensetivity;
-    [SerializeField] Slider fov;
-    [SerializeField] Slider velocity;
+    [SerializeField] private Slider sensetivity;
+    [SerializeField] private Slider fov;
+    [SerializeField] private Slider velocity;
     public GameObject loadingImage;
-    [SerializeField] FirstPersonController firstPersonController;
+    [SerializeField] private FirstPersonController firstPersonController;
     private void Start()
     {
         if (PlayerPrefs.HasKey("Sensetivity"))
@@ -44,6 +44,7 @@ public class Escape : MonoBehaviour
         exitMenu.SetActive(false);
         Time.timeScale = 1;
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPause && firstPersonController.isGrounded)
@@ -61,7 +62,6 @@ public class Escape : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPause)
         {
-            // PlayerPrefs.SetFloat("sensetivity", cam.mouseSensevity);
             exitMenu.SetActive(false);
             isPause = false;
             Cursor.lockState = CursorLockMode.Locked;
@@ -70,10 +70,12 @@ public class Escape : MonoBehaviour
             firstPersonController.cameraCanMove = true;
         }
     }
+
     public void Exit()
     {
         StartCoroutine(LOadingScreenOnFable());
     }
+
     public void ChangeSense()
     {
         firstPersonController.mouseSensitivity = sensetivity.value;
@@ -92,6 +94,7 @@ public class Escape : MonoBehaviour
         firstPersonController.walkSpeed = velocity.value;
         PlayerPrefs.SetFloat("Velocity", firstPersonController.walkSpeed);
     }
+
     IEnumerator LOadingScreenOnFable()
     {
         loadingImage.SetActive(true);

@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 public class SaveAndLoadCell : MonoBehaviour
 {
     public static string ParentName;
-    [SerializeField] TMP_InputField cellBody;
-    [SerializeField] TMP_InputField numerator;
-    [SerializeField] TMP_InputField denominator;
-    [SerializeField] Fraction fraction;
-   public string ID;
-    bool canDO = true;
+    [SerializeField] private TMP_InputField cellBody;
+    [SerializeField] private TMP_InputField numerator;
+    [SerializeField] private TMP_InputField denominator;
+    [SerializeField] private Fraction fraction;
+    public string ID;
+    private bool canDO = true;
     private void OnDisable()
     {
         cellBody.text = "";
@@ -19,10 +19,11 @@ public class SaveAndLoadCell : MonoBehaviour
         fraction.FractionObject.SetActive(false);
         canDO = true;
     }
+
     void Update()
     {
         ID = SceneManager.GetActiveScene().buildIndex + ParentName + gameObject.name;
-        if(canDO && ID != null)
+        if (canDO && ID != null)
         {
             Debug.Log("enabled");
             fraction.isActive = PlayerPrefs.GetInt(ID + "FractionActive");
@@ -42,7 +43,6 @@ public class SaveAndLoadCell : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     public void OnChange()
     {
         PlayerPrefs.SetString(ID + "cellBody", cellBody.text);

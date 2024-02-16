@@ -613,6 +613,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1715882784295517505, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+      propertyPath: light.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715882784295517505, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+      propertyPath: light.Array.data[0]
+      value: 
+      objectReference: {fileID: 211519995}
+    - target: {fileID: 1715882784295517505, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+      propertyPath: light.Array.data[1]
+      value: 
+      objectReference: {fileID: 1198971073}
+    - target: {fileID: 1715882784295517505, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+      propertyPath: light.Array.data[2]
+      value: 
+      objectReference: {fileID: 2090152845}
+    - target: {fileID: 1715882784295517505, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+      propertyPath: light.Array.data[3]
+      value: 
+      objectReference: {fileID: 555226258}
     - target: {fileID: 9218705738589261672, guid: 101af18bc49b8264e94f430c642de965, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.13063094
@@ -1012,7 +1032,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 41949315}
   m_TextViewport: {fileID: 1968525357}
   m_TextComponent: {fileID: 637218496}
@@ -1442,7 +1462,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 43084711}
   m_TextViewport: {fileID: 943068401}
   m_TextComponent: {fileID: 1994178425}
@@ -6946,6 +6966,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+--- !u!108 &211519995 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1544335588033562225, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+  m_PrefabInstance: {fileID: 211519994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &215187636
 GameObject:
   m_ObjectHideFlags: 0
@@ -8794,13 +8819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0740e5d3f2cefb54c9d175c0a8733991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField1: {fileID: 3299527}
-  inputField2: {fileID: 769165369}
-  inputField3: {fileID: 2129236525}
-  gameObj: {fileID: 287497010}
-  divideCode: {fileID: 287497013}
-  galkaCode: {fileID: 0}
-  parentObject: {fileID: 90975278}
 --- !u!114 &287497013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9838,7 +9856,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 297401081}
   m_TextViewport: {fileID: 83393060}
   m_TextComponent: {fileID: 1843373591}
@@ -16647,7 +16665,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 553252930}
   m_TextViewport: {fileID: 1814585482}
   m_TextComponent: {fileID: 373726917}
@@ -16929,6 +16947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+--- !u!108 &555226258 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1544335588033562225, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+  m_PrefabInstance: {fileID: 555226257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &567772712
 GameObject:
   m_ObjectHideFlags: 0
@@ -17425,7 +17448,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 576176018}
   m_TextViewport: {fileID: 1833788782}
   m_TextComponent: {fileID: 1360673558}
@@ -19230,7 +19253,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663045192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19239,8 +19262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 652.07, y: -0.007507324}
-  m_SizeDelta: {x: 1304.09, y: -0.01}
+  m_AnchoredPosition: {x: 535.4, y: -0.007507324}
+  m_SizeDelta: {x: 1070.7, y: -0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &663045194
 MonoBehaviour:
@@ -19645,7 +19668,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 693698459}
   m_TextViewport: {fileID: 1363395273}
   m_TextComponent: {fileID: 1020270439}
@@ -20819,7 +20842,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 713184198}
   m_TextViewport: {fileID: 384314192}
   m_TextComponent: {fileID: 2033537322}
@@ -23711,7 +23734,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 796143212}
   m_TextViewport: {fileID: 903637063}
   m_TextComponent: {fileID: 1668026653}
@@ -24404,7 +24427,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 802636181}
   m_TextViewport: {fileID: 1115270046}
   m_TextComponent: {fileID: 1223231100}
@@ -29061,7 +29084,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 962540121}
   m_TextViewport: {fileID: 1074754348}
   m_TextComponent: {fileID: 93326250}
@@ -29779,7 +29802,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 980805647}
   m_TextViewport: {fileID: 1787006206}
   m_TextComponent: {fileID: 1333076170}
@@ -30129,7 +30152,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 988235070}
   m_TextViewport: {fileID: 1844084973}
   m_TextComponent: {fileID: 1860450555}
@@ -34922,6 +34945,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+--- !u!108 &1198971073 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1544335588033562225, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+  m_PrefabInstance: {fileID: 1198971072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1203696548
 GameObject:
   m_ObjectHideFlags: 0
@@ -35471,7 +35499,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211334657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35480,8 +35508,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 652.07, y: -0.007507324}
-  m_SizeDelta: {x: 1304.09, y: -0.01}
+  m_AnchoredPosition: {x: 558.19995, y: -0.007507324}
+  m_SizeDelta: {x: 1116.3, y: -0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211334659
 MonoBehaviour:
@@ -37628,7 +37656,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1271521958}
   m_TextViewport: {fileID: 1691024027}
   m_TextComponent: {fileID: 1180226582}
@@ -39268,7 +39296,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1304462278}
   m_TextViewport: {fileID: 1619874976}
   m_TextComponent: {fileID: 768702036}
@@ -46059,7 +46087,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1518662284}
   m_TextViewport: {fileID: 828966928}
   m_TextComponent: {fileID: 814656133}
@@ -47255,7 +47283,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1567410311}
   m_TextViewport: {fileID: 1032674042}
   m_TextComponent: {fileID: 1384784099}
@@ -47644,7 +47672,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1573670367}
   m_TextViewport: {fileID: 884222990}
   m_TextComponent: {fileID: 1572249348}
@@ -48661,7 +48689,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1604935225}
   m_TextViewport: {fileID: 404293610}
   m_TextComponent: {fileID: 891424319}
@@ -50219,8 +50247,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 729.3571, y: 79.79578, z: 32.65692}
-  m_Center: {x: 201.98006, y: -26.600399, z: -15.828913}
+  m_Size: {x: 956.6179, y: 79.795784, z: 32.65692}
+  m_Center: {x: 88.34968, y: -26.600399, z: -15.828904}
 --- !u!114 &1663192685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51481,7 +51509,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1679452100}
   m_TextViewport: {fileID: 844281749}
   m_TextComponent: {fileID: 833981554}
@@ -51772,7 +51800,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1685461031}
   m_TextViewport: {fileID: 1204165774}
   m_TextComponent: {fileID: 706694187}
@@ -52725,7 +52753,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1728760906}
   m_TextViewport: {fileID: 742928739}
   m_TextComponent: {fileID: 1248333398}
@@ -55984,7 +56012,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1840934150
@@ -57023,7 +57051,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1900444023}
   m_TextViewport: {fileID: 380984429}
   m_TextComponent: {fileID: 1015707400}
@@ -60468,7 +60496,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1996238113}
   m_TextViewport: {fileID: 431256865}
   m_TextComponent: {fileID: 493513183}
@@ -61795,13 +61823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0740e5d3f2cefb54c9d175c0a8733991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField1: {fileID: 1353647900}
-  inputField2: {fileID: 7566164}
-  inputField3: {fileID: 1667099832}
-  gameObj: {fileID: 2044493571}
-  divideCode: {fileID: 2044493574}
-  galkaCode: {fileID: 0}
-  parentObject: {fileID: 1628709850}
 --- !u!114 &2044493574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62158,7 +62179,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2057564278}
   m_TextViewport: {fileID: 1434387448}
   m_TextComponent: {fileID: 1424178755}
@@ -63085,6 +63106,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+--- !u!108 &2090152845 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1544335588033562225, guid: 01a8b0673b9114d45bf53ca49dbecded, type: 3}
+  m_PrefabInstance: {fileID: 2090152844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2093313811 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9218705738682655068, guid: 101af18bc49b8264e94f430c642de965, type: 3}
@@ -64214,7 +64240,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2142954452
@@ -65974,7 +66000,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 398906799245044448}
   m_TextViewport: {fileID: 398906798430853352}
   m_TextComponent: {fileID: 398906798249210217}
@@ -66276,7 +66302,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 398906799381040017}
   m_TextViewport: {fileID: 398906799503170352}
   m_TextComponent: {fileID: 398906798961700465}
@@ -66780,7 +66806,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1275510124268561278}
   m_TextViewport: {fileID: 1275510123341984735}
   m_TextComponent: {fileID: 1275510123882661534}
@@ -67537,7 +67563,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1275510124136645135}
   m_TextViewport: {fileID: 1275510124414038023}
   m_TextComponent: {fileID: 1275510125398366598}
@@ -68680,7 +68706,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3153609372856039521}
   m_TextViewport: {fileID: 3153609374189324905}
   m_TextComponent: {fileID: 3153609373808452584}
@@ -69167,7 +69193,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3153609372723599632}
   m_TextViewport: {fileID: 3153609373114157489}
   m_TextComponent: {fileID: 3153609372572695792}
@@ -70060,7 +70086,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3176247654033788809}
   m_TextViewport: {fileID: 3176247653341962024}
   m_TextComponent: {fileID: 3176247653882915433}
@@ -70583,7 +70609,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3176247654174650104}
   m_TextViewport: {fileID: 3176247654417423600}
   m_TextComponent: {fileID: 3176247655133328753}
@@ -71896,7 +71922,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 4351356099699415227}
   m_TextViewport: {fileID: 4351356099007842330}
   m_TextComponent: {fileID: 4351356099548544347}
@@ -72506,7 +72532,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 4351356099823499722}
   m_TextViewport: {fileID: 4351356097936608194}
   m_TextComponent: {fileID: 4351356098635735619}
@@ -73034,7 +73060,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 4409543347064380965}
   m_TextViewport: {fileID: 4409543346372087428}
   m_TextComponent: {fileID: 4409543346913311685}
@@ -73571,7 +73597,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 4409543347200393044}
   m_TextViewport: {fileID: 4409543347444141404}
   m_TextComponent: {fileID: 4409543348093461725}
@@ -74533,7 +74559,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 5016534713675410700}
   m_TextViewport: {fileID: 5016534713431580420}
   m_TextComponent: {fileID: 5016534712522716805}
@@ -75328,7 +75354,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 5016534713556044925}
   m_TextViewport: {fileID: 5016534714508057820}
   m_TextComponent: {fileID: 5016534713975531933}
@@ -76149,7 +76175,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6756493071111399987}
   m_TextViewport: {fileID: 6756493072461404219}
   m_TextComponent: {fileID: 6756493072297062842}
@@ -76364,7 +76390,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6756493071231142722}
   m_TextViewport: {fileID: 6756493071385975779}
   m_TextComponent: {fileID: 6756493070845292194}
@@ -78920,13 +78946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0740e5d3f2cefb54c9d175c0a8733991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField1: {fileID: 7985109106072619345}
-  inputField2: {fileID: 7985109106859905874}
-  inputField3: {fileID: 7985109106092544423}
-  gameObj: {fileID: 7985109105727624719}
-  divideCode: {fileID: 7985109105727624817}
-  galkaCode: {fileID: 0}
-  parentObject: {fileID: 7985109105553019475}
 --- !u!1 &7985109105886716596
 GameObject:
   m_ObjectHideFlags: 0
@@ -81077,7 +81096,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 8427009184470667161}
   m_TextViewport: {fileID: 8427009183510142776}
   m_TextComponent: {fileID: 8427009184051358329}
@@ -81889,7 +81908,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 8427009184342568680}
   m_TextViewport: {fileID: 8427009182438907104}
   m_TextComponent: {fileID: 8427009183356663137}
@@ -82934,7 +82953,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 9049482797093215231}
   m_TextViewport: {fileID: 9049482796945918814}
   m_TextComponent: {fileID: 9049482797478985247}
@@ -83184,7 +83203,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 9049482797220805262}
   m_TextViewport: {fileID: 9049482795869669510}
   m_TextComponent: {fileID: 9049482796024094983}

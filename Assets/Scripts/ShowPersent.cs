@@ -15,20 +15,19 @@ public class ShowPersent : MonoBehaviour
     public TextMeshProUGUI PercentFour;
     public TextMeshProUGUI PercentFive;
 
-    
-   private void Start()
+    private void Start()
     {
-      RoomOnePercent= PlayerPrefs.GetInt("Movement");
-       double RoomOnePercentDouble = RoomOnePercent;
+        RoomOnePercent = PlayerPrefs.GetInt("Movement");
+        double RoomOnePercentDouble = RoomOnePercent;
         RoomOnePercentDouble *= 10;
-        PercentOne.text =  RoomOnePercentDouble+ " %";
-        if(RoomOnePercentDouble==100)
-            PercentOne.color=Color.green;
+        PercentOne.text = RoomOnePercentDouble + " %";
+        if (RoomOnePercentDouble == 100)
+            PercentOne.color = Color.green;
 
         RoomTwoPercent = PlayerPrefs.GetInt("Mass");
         double RoomTwoPercentDouble = RoomTwoPercent;
-        RoomTwoPercentDouble = RoomTwoPercentDouble/6*100;
-        PercentTwo.text = Math.Round(RoomTwoPercentDouble,0) + " %";
+        RoomTwoPercentDouble = RoomTwoPercentDouble / 6 * 100;
+        PercentTwo.text = Math.Round(RoomTwoPercentDouble, 0) + " %";
         if (RoomTwoPercentDouble == 100)
             PercentTwo.color = Color.green;
 
@@ -53,9 +52,10 @@ public class ShowPersent : MonoBehaviour
         if (RoomFivePercentDouble == 100)
             PercentFive.color = Color.green;
     }
+
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F3)) 
+        if (Input.GetKeyDown(KeyCode.F3))
         {
             PlayerPrefs.DeleteAll();
             RoomOnePercent = 0;
@@ -64,7 +64,5 @@ public class ShowPersent : MonoBehaviour
             RoomFourPercent = 0;
             RoomFivePercent = 0;
         }
-
     }
-
 }

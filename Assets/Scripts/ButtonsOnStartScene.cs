@@ -1,12 +1,21 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Buttons : MonoBehaviour
+public class ButtonsOnStartScene : MonoBehaviour
 {
     public int n;
     public GameObject loadingImage;
+    [SerializeField] private bool isBadQuality;
     public void StartGame()
     {
+        if(isBadQuality)
+        {
+            PlayerPrefs.SetInt("Quality", 0);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Quality", 1);
+        }
         StartCoroutine(LOadingScreenOnFable());
     }
     public void ExitGame()

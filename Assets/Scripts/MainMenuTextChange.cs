@@ -3,18 +3,21 @@ using UnityEngine;
 
 public class MainMenuTextChange : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI text;
-    [SerializeField] GameObject changesImage;
-   public void Management()
+    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private GameObject changesImage;
+
+    public void Management()
     {
         changesImage.SetActive(false);
         text.text = " F1 - зафиксировать камеру \n F3 - удалить сохранения \n F5 - калькулятор \n F8 - показать условие";
     }
+
     public void SI()
     {
         text.text = " Пишите все ответы в единицах СИ, если в условии ничего про это не написано: \n Скорость - м/с \n Масса - кг \n Время - с \n Работа - Дж \n Расстояние - м \n Мощность - Вт \n Сила - Н\n Давление - Па \n";
         changesImage.SetActive(false);
     }
+
     public void Decor()
     {
         changesImage.SetActive(true);

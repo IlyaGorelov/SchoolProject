@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class JackdowSave : MonoBehaviour
 {
-    [SerializeField] GameObject jackdow;
-    string ID;
-    int isActive = 0;
+    [SerializeField] private GameObject jackdow;
+    private string ID;
+    private int isActive = 0;
+
     private void Start()
     {
         ID = SceneManager.GetActiveScene().buildIndex + gameObject.name;
@@ -15,6 +16,7 @@ public class JackdowSave : MonoBehaviour
             jackdow.SetActive(true);
         }
     }
+
     private void Update()
     {
         if (jackdow.activeSelf)
@@ -22,7 +24,8 @@ public class JackdowSave : MonoBehaviour
             isActive = 1;
             PlayerPrefs.SetInt(ID + "jackdow", isActive);
         }
-        if(Input.GetKeyDown(KeyCode.F3)) {
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
             isActive = 0;
             PlayerPrefs.DeleteAll();
             jackdow.SetActive(false);

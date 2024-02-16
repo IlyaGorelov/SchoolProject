@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class EnterZoneScript : MonoBehaviour
 {
-    [SerializeField] int n;
+    [SerializeField] private int n;
     public GameObject loadingImage;
 
     IEnumerator LOadingScreenOnFable()
@@ -17,7 +17,7 @@ public class EnterZoneScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag=="Player") 
+        if (other.tag == "Player")
         {
             StartCoroutine(LOadingScreenOnFable());
         }

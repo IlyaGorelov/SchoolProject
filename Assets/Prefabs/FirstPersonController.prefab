@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 9218705738682655069}
   - component: {fileID: 9218705738682655068}
   - component: {fileID: 4759165116308338207}
+  - component: {fileID: 1715882784295517505}
   m_Layer: 0
   m_Name: FirstPersonController
   m_TagString: Player
@@ -756,3 +757,16 @@ MonoBehaviour:
   PercentThree: {fileID: 0}
   PercentFour: {fileID: 0}
   PercentFive: {fileID: 0}
+--- !u!114 &1715882784295517505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218705738682655062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcce5bd9186a510448a27732d76ea93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: []

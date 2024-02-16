@@ -3,16 +3,15 @@ using UnityEngine;
 
 public class Fraction : MonoBehaviour
 {
-    
     public GameObject FractionObject;
     public float a;
-    [SerializeField] TMP_InputField denomerator;
+    [SerializeField] private TMP_InputField denomerator;
 
-    [SerializeField] TMP_InputField numerator;
+    [SerializeField] private TMP_InputField numerator;
     public int isActive = 0;
     public TMP_InputField cellBody;
-    
-    SaveAndLoadCell cellCode;
+
+    private SaveAndLoadCell cellCode;
 
     private void Start()
     {
@@ -37,7 +36,7 @@ public class Fraction : MonoBehaviour
                 {
                     FractionObject.SetActive(false);
                     isActive = 0;
-                    PlayerPrefs.SetInt(cellCode.ID + "FractionActive", isActive);   
+                    PlayerPrefs.SetInt(cellCode.ID + "FractionActive", isActive);
                 }
             }
         }

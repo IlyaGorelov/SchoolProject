@@ -5,15 +5,13 @@ public class Calculator : MonoBehaviour
     public Transform calc;
     public bool anim = false;
 
-    public void AS()
+    public void ShowCalc()
     {
         if (anim == false)
         {
-
             GetComponent<Animator>().SetBool("Ap", !anim);
             GetComponent<Animator>().SetBool("Ex", anim);
             anim = true;
-
         }
         else if (anim == true)
         {
@@ -29,11 +27,9 @@ public class Calculator : MonoBehaviour
         {
             if (anim == false)
             {
-
                 GetComponent<Animator>().SetBool("Ap", !anim);
                 GetComponent<Animator>().SetBool("Ex", anim);
                 anim = true;
-
             }
             else if (anim == true)
             {

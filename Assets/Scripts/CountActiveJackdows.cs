@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class CountActiveJackdows : MonoBehaviour
 {
-    [SerializeField] GameObject[] Jackdows;
-    int count = 0;
-   
+    [SerializeField] private GameObject[] Jackdows;
+    private int count = 0;
+
     public void OnExit()
     {
         foreach (GameObject j in Jackdows)

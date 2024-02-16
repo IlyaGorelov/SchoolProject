@@ -1,22 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class ShowTaskBody : MonoBehaviour
 {
-    [SerializeField] GameObject TaskBody;
-    TextMeshProUGUI nameOfThisTask;
-    string oldName;
-    [SerializeField] TextMeshProUGUI TaskCondition;
-    bool isShown = false;
-    [SerializeField] string thisTaskCondition;
-    [SerializeField] GameObject parent;
-    [SerializeField] double minNumberAnswer;
-    [SerializeField] double maxNumberAnswer;
-    [SerializeField] string textAnswer;
-    [SerializeField] string textNumerator;
-    [SerializeField] string textDenomerator;
+    [SerializeField] private GameObject TaskBody;
+    private TextMeshProUGUI nameOfThisTask;
+    private string oldName;
+    [SerializeField] private TextMeshProUGUI TaskCondition;
+    private bool isShown = false;
+    [SerializeField] private string thisTaskCondition;
+    [SerializeField] private GameObject parent;
+    [SerializeField] private double minNumberAnswer;
+    [SerializeField] private double maxNumberAnswer;
+    [SerializeField] private string textAnswer;
+    [SerializeField] private string textNumerator;
+    [SerializeField] private string textDenomerator;
+
     private void Start()
     {
         nameOfThisTask = GetComponentInChildren<TextMeshProUGUI>();
@@ -24,14 +23,13 @@ public class ShowTaskBody : MonoBehaviour
 
     public void ShowTask()
     {
-        
         if (!isShown)
         {
             SaveAndLoadCell.ParentName = parent.name;
             ChekingCode.minA = minNumberAnswer;
             ChekingCode.maxA = maxNumberAnswer;
             ChekingCode.inputField1 = textAnswer;
-            ChekingCode.inputField2= textNumerator;
+            ChekingCode.inputField2 = textNumerator;
             ChekingCode.inputField3 = textDenomerator;
             oldName = nameOfThisTask.text;
             nameOfThisTask.text += "+";

@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SpecSymbols : MonoBehaviour
 {
-    TMP_InputField inputField1;
+    private TMP_InputField inputField1;
     private void Start()
     {
         inputField1 = GetComponent<TMP_InputField>();
@@ -16,6 +13,7 @@ public class SpecSymbols : MonoBehaviour
     {
         ReplaceText();
     }
+
     void ReplaceText()
     {
         inputField1.text = inputField1.text.Replace(":", "^");

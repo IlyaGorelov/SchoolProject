@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class ToiletCabinDoor : MonoBehaviour
 {
-    [SerializeField] Type thisType;
-    enum Type
+    [SerializeField] private Type thisType;
+    private enum Type
     {
         door,
         cover
     }
-
 
     private void OnMouseOver()
     {
@@ -26,7 +25,6 @@ public class ToiletCabinDoor : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
-
         }
     }
 }

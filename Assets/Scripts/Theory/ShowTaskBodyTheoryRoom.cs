@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class ShowTask : MonoBehaviour
+public class ShowTaskBodyTheoryRoom : MonoBehaviour
 {
-    [SerializeField] GameObject Task;
-    bool isShown = false;
+    [SerializeField] private GameObject Task;
+    private bool isShown = false;
     public void Show()
     {
         if (!isShown)
         {
             isShown = true;
             Task.SetActive(true);
-        }else if (isShown)
+        }
+        else if (isShown)
         {
             isShown = false;
             Task.SetActive(false);

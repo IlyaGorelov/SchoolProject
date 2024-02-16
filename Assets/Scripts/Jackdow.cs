@@ -1,15 +1,14 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Galka : MonoBehaviour
+public class Jackdow : MonoBehaviour
 {
     public GameObject _galka;
     public ChekingCode code;
     public int isGalka;
     private void Awake()
     {
-        isGalka = PlayerPrefs.GetInt(gameObject.name+SceneManager.GetActiveScene().buildIndex+ _galka.name + "galka");
+        isGalka = PlayerPrefs.GetInt(gameObject.name + SceneManager.GetActiveScene().buildIndex + _galka.name + "galka");
         if (isGalka == 1)
         {
             _galka.SetActive(true);
@@ -19,13 +18,14 @@ public class Galka : MonoBehaviour
             _galka.SetActive(false);
         }
     }
+
     void Update()
     {
         if (code.result.text == "Ответ правильный")
         {
             _galka.SetActive(true);
             isGalka = 1;
-            PlayerPrefs.SetInt(gameObject.name+SceneManager.GetActiveScene().buildIndex + _galka.name + "galka", isGalka);
+            PlayerPrefs.SetInt(gameObject.name + SceneManager.GetActiveScene().buildIndex + _galka.name + "galka", isGalka);
         }
         if (Input.GetKeyDown(KeyCode.F3))
         {

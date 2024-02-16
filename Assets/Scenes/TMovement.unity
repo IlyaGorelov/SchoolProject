@@ -8218,8 +8218,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 729.3571, y: 79.79578, z: 32.65692}
-  m_Center: {x: 201.98006, y: -26.600399, z: -15.828913}
+  m_Size: {x: 724.7567, y: 79.79579, z: 32.65692}
+  m_Center: {x: -20.611294, y: -26.6004, z: -15.828927}
 --- !u!114 &1663192685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9548,7 +9548,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1841735780
@@ -12411,7 +12411,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!222 &16122151974242024
@@ -22113,13 +22113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0740e5d3f2cefb54c9d175c0a8733991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField1: {fileID: 7985109106072619345}
-  inputField2: {fileID: 7985109106859905874}
-  inputField3: {fileID: 7985109106092544423}
-  gameObj: {fileID: 7985109105727624719}
-  divideCode: {fileID: 7985109105727624817}
-  galkaCode: {fileID: 0}
-  parentObject: {fileID: 7985109105553019475}
 --- !u!1 &7985109105886716596
 GameObject:
   m_ObjectHideFlags: 0

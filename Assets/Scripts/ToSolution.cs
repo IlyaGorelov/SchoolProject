@@ -2,26 +2,25 @@ using UnityEngine;
 
 public class ToSolution : MonoBehaviour
 {
-
-    [SerializeField] GameObject playerPosition;
+    [SerializeField] private GameObject playerPosition;
     public Transform playerNextPos;
     public static bool isSoluting = false;
-    [SerializeField] GameObject solutionObject;
-    [SerializeField] GameObject TextInputLMB;
-    [SerializeField] FirstPersonController controller;
-    Rigidbody rb;
-    float playerSpeed;
+    [SerializeField] private GameObject solutionObject;
+    [SerializeField] private GameObject TextInputLMB;
+    [SerializeField] private FirstPersonController controller;
+    private Rigidbody rb;
+
     private void Start()
     {
         rb = playerPosition.GetComponent<Rigidbody>();
     }
+
     public void ToSolut()
     {
         isSoluting = true;
         solutionObject.SetActive(false);
         TextInputLMB.SetActive(false);
         playerPosition.transform.position = playerNextPos.position;
-
         controller.playerCanMove = false;
         rb.velocity = Vector3.zero;
         rb.useGravity = false;

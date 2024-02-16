@@ -5,13 +5,14 @@ public class EnterDoor : MonoBehaviour
 {
     public int n;
     public GameObject loadingImage;
-    [SerializeField] Animator animator;
-    
+    [SerializeField] private Animator animator;
+
     public void LoadScene()
     {
         animator.enabled = true;
         StartCoroutine(LOadingScreenOnFable());
     }
+
     IEnumerator LOadingScreenOnFable()
     {
         yield return new WaitForSeconds(1);
