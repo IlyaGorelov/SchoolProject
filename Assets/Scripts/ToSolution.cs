@@ -9,6 +9,7 @@ public class ToSolution : MonoBehaviour
     [SerializeField] private GameObject TextInputLMB;
     [SerializeField] private FirstPersonController controller;
     private Rigidbody rb;
+    [SerializeField] FixedJoystick joystick;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class ToSolution : MonoBehaviour
 
     public void ToSolut()
     {
+        joystick.gameObject.SetActive(false);
         isSoluting = true;
         solutionObject.SetActive(false);
         TextInputLMB.SetActive(false);
@@ -34,9 +36,11 @@ public class ToSolution : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
+
         }
         if (Input.GetKeyDown(KeyCode.Escape) && isSoluting)
         {
+            joystick.gameObject.SetActive(true);
             isSoluting = false;
             solutionObject.SetActive(true);
             controller.playerCanMove = true;
