@@ -12,6 +12,9 @@ public class Escape : MonoBehaviour
     [SerializeField] private Slider velocity;
     public GameObject loadingImage;
     [SerializeField] private FirstPersonController firstPersonController;
+    public static bool needToGround = false;
+    [SerializeField] GameObject secButton;
+
     private void Start()
     {
         if (PlayerPrefs.HasKey("Sensetivity"))
@@ -49,25 +52,11 @@ public class Escape : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPause && firstPersonController.isGrounded)
         {
-            Debug.Log(ToSolution.isSoluting);
-            exitMenu.SetActive(true);
-            isPause = true;
-            firstPersonController.cameraCanMove = false;
-            if (isPause)
-            {
-                Cursor.lockState = CursorLockMode.Confined;
-                Cursor.visible = true;
-            }
-            Time.timeScale = 0.0f;
+            ActivateEscape();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPause)
         {
-            exitMenu.SetActive(false);
-            isPause = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            Time.timeScale = 1.0f;
-            firstPersonController.cameraCanMove = true;
+            DeactivateEscape();
         }
     }
 
@@ -93,6 +82,40 @@ public class Escape : MonoBehaviour
     {
         firstPersonController.walkSpeed = velocity.value;
         PlayerPrefs.SetFloat("Velocity", firstPersonController.walkSpeed);
+    }
+
+    public void ActivateEscape()
+    {
+        if (!isPause && firstPersonController.isGrounded)
+        {
+            Debug.Log(ToSolution.isSoluting);
+            exitMenu.SetActive(true);
+            isPause = true;
+            firstPersonController.cameraCanMove = false;
+            if (isPause)
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+            }
+            Time.timeScale = 0.0f;
+        }
+        else
+        {
+            needToGround = true;
+        }
+    }
+
+    public void DeactivateEscape()
+    {
+        if (isPause)
+        {
+            exitMenu.SetActive(false);
+            isPause = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1.0f;
+            firstPersonController.cameraCanMove = true;
+        }
     }
 
     IEnumerator LOadingScreenOnFable()

@@ -38,8 +38,9 @@ public class ToSolution : MonoBehaviour
             Cursor.visible = true;
 
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && isSoluting)
+        if (Escape.needToGround && isSoluting)
         {
+            Escape.needToGround = false;
             joystick.gameObject.SetActive(true);
             isSoluting = false;
             solutionObject.SetActive(true);
