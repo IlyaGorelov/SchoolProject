@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CellCode : MonoBehaviour
 {
@@ -14,10 +15,12 @@ public class CellCode : MonoBehaviour
     {
         ReplaceText();
     }
+
     public void Create()
     {
         text.SetActive(true);
     }
+
     public void Cheaking()
     {
         foreach (char t in inputField1.text)

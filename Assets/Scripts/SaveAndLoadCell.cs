@@ -37,10 +37,6 @@ public class SaveAndLoadCell : MonoBehaviour
             cellBody.text = PlayerPrefs.GetString(ID + "cellBody");
             canDO = false;
         }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            PlayerPrefs.DeleteAll();
-        }
     }
 
     public void OnChange()

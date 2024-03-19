@@ -26,10 +26,5 @@ public class SaveFlash : MonoBehaviour
             isActive = 1;
             PlayerPrefs.SetInt(SceneManager.GetActiveScene().buildIndex + "flash", isActive);
         }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            flash.SetActive(false);
-            PlayerPrefs.DeleteAll();
-        }
     }
 }

@@ -4921,7 +4921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13124,7 +13124,7 @@ MonoBehaviour:
   inputfield1: {fileID: 1705862018}
   inputfield2: {fileID: 1046937330}
   inputfield3: {fileID: 1962215847}
-  room1: {fileID: 0}
+  room1: {fileID: 1428091705}
 --- !u!1001 &630904702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13810,8 +13810,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 172455954}
-        m_TargetAssemblyTypeName: calcAnim, Assembly-CSharp
-        m_MethodName: AS
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: ShowCalc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30788,6 +30788,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+--- !u!114 &1428091705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4759165116308338207, guid: 101af18bc49b8264e94f430c642de965, type: 3}
+  m_PrefabInstance: {fileID: 1428091704}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933335375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62601b27e6011d644826e462ad8eac1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1439192882
 GameObject:
   m_ObjectHideFlags: 0

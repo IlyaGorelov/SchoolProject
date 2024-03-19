@@ -9,7 +9,7 @@ public class MainMenuTextChange : MonoBehaviour
     public void Management()
     {
         changesImage.SetActive(false);
-        text.text = " F1 - зафиксировать камеру \n F3 - удалить сохранения \n F5 - калькулятор \n F8 - показать условие";
+        text.text = " F1 - зафиксировать камеру \n F5 - калькулятор \n F8 - показать условие";
     }
 
     public void SI()

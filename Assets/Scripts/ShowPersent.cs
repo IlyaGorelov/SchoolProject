@@ -52,17 +52,4 @@ public class ShowPersent : MonoBehaviour
         if (RoomFivePercentDouble == 100)
             PercentFive.color = Color.green;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            PlayerPrefs.DeleteAll();
-            RoomOnePercent = 0;
-            RoomTwoPercent = 0;
-            RoomThreePercent = 0;
-            RoomFourPercent = 0;
-            RoomFivePercent = 0;
-        }
-    }
 }
