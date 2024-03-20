@@ -24,11 +24,5 @@ public class JackdowSave : MonoBehaviour
             isActive = 1;
             PlayerPrefs.SetInt(ID + "jackdow", isActive);
         }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            isActive = 0;
-            PlayerPrefs.DeleteAll();
-            jackdow.SetActive(false);
-        }
     }
 }

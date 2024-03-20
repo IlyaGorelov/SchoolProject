@@ -27,11 +27,5 @@ public class Jackdow : MonoBehaviour
             isGalka = 1;
             PlayerPrefs.SetInt(gameObject.name + SceneManager.GetActiveScene().buildIndex + _galka.name + "galka", isGalka);
         }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            PlayerPrefs.DeleteAll();
-            isGalka = 0;
-            _galka.SetActive(false);
-        }
     }
 }
