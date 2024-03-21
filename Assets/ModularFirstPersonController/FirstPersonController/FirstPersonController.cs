@@ -178,10 +178,7 @@ public class FirstPersonController : MonoBehaviour
     {
         halfScreenWidth = Screen.width / 2;
 
-        if (lockCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+       
 
         if (crosshair)
         {
@@ -229,6 +226,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        Cursor.lockState= CursorLockMode.Confined;
         #region Camera
         GetTouchInput();
         playerCamera.fieldOfView = fov;

@@ -4,7 +4,7 @@ using UnityEngine;
 public class СellCode : MonoBehaviour
 {
     public GameObject text;
-    public ChekingCode code;
+    public СheсkingCode code;
     [Header("InputField")]
     public TMP_InputField inputField1;
     public TMP_InputField inputField2;

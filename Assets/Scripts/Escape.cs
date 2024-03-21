@@ -13,7 +13,6 @@ public class Escape : MonoBehaviour
     public GameObject loadingImage;
     [SerializeField] private FirstPersonController firstPersonController;
     public static bool needToGround = false;
-    [SerializeField] GameObject secButton;
 
     private void Start()
     {

@@ -24,6 +24,7 @@ public class Fraction : MonoBehaviour
         {
             cellBody.text = "";
             cellBody.DeactivateInputField(true);
+            cellBody.interactable = false;
             FractionObject.SetActive(true);
             isActive = 1;
             PlayerPrefs.SetInt(cellCode.ID + "FractionActive", isActive);
@@ -34,6 +35,7 @@ public class Fraction : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Backspace))
                 {
+                    cellBody.interactable = true;
                     FractionObject.SetActive(false);
                     isActive = 0;
                     PlayerPrefs.SetInt(cellCode.ID + "FractionActive", isActive);

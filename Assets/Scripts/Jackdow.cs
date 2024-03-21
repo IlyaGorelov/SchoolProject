@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class Jackdow : MonoBehaviour
 {
     public GameObject _galka;
-    public ChekingCode code;
+    public ÑheñkingCode code;
     public int isGalka;
     private void Awake()
     {

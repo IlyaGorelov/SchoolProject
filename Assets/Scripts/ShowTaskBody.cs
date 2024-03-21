@@ -26,11 +26,11 @@ public class ShowTaskBody : MonoBehaviour
         if (!isShown)
         {
             SaveAndLoadCell.ParentName = parent.name;
-            ChekingCode.minA = minNumberAnswer;
-            ChekingCode.maxA = maxNumberAnswer;
-            ChekingCode.inputField1 = textAnswer;
-            ChekingCode.inputField2 = textNumerator;
-            ChekingCode.inputField3 = textDenomerator;
+            ÑheñkingCode.minA = minNumberAnswer;
+            ÑheñkingCode.maxA = maxNumberAnswer;
+            ÑheñkingCode.inputField1 = textAnswer;
+            ÑheñkingCode.inputField2 = textNumerator;
+            ÑheñkingCode.inputField3 = textDenomerator;
             oldName = nameOfThisTask.text;
             nameOfThisTask.text += "+";
             TaskBody.SetActive(true);
