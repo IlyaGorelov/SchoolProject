@@ -18,13 +18,6 @@ public class ChekingCode : MonoBehaviour
     public ShowPersent room1;
     private int canAdd = 1;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            PlayerPrefs.DeleteAll();
-        }
-    }
     private void Start()
     {
         canAdd = PlayerPrefs.GetInt(SaveAndLoadCell.ParentName + "canAdd");
