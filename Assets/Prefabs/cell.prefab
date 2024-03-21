@@ -1361,7 +1361,6 @@ GameObject:
   - component: {fileID: 1686389941237499062}
   - component: {fileID: 1686389941237499060}
   - component: {fileID: 1686389941237499067}
-  - component: {fileID: 1686389941237499058}
   - component: {fileID: 1686389941237499052}
   - component: {fileID: 1686389941237499059}
   m_Layer: 5
@@ -1452,8 +1451,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.21960784}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.05882353}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1517,25 +1516,6 @@ MonoBehaviour:
   inputField1: {fileID: 1686389939527765517}
   inputField2: {fileID: 1686389939635312186}
   inputField3: {fileID: 1686389939980829861}
---- !u!114 &1686389941237499058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686389941237499065}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0740e5d3f2cefb54c9d175c0a8733991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField1: {fileID: 1686389939527765517}
-  inputField2: {fileID: 1686389939635312186}
-  inputField3: {fileID: 1686389939980829861}
-  gameObj: {fileID: 1686389941237499065}
-  divideCode: {fileID: 0}
-  galkaCode: {fileID: 0}
-  parentObject: {fileID: 0}
 --- !u!114 &1686389941237499052
 MonoBehaviour:
   m_ObjectHideFlags: 0

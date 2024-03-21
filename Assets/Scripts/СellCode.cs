@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class CellCode : MonoBehaviour
+public class СellCode : MonoBehaviour
 {
     public GameObject text;
     public ChekingCode code;
