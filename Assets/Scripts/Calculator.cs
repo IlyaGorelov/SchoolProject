@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Calculator : MonoBehaviour
 {
-    public Transform calc;
     public bool anim = false;
 
     public void ShowCalc()
