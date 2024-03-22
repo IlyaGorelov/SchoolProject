@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class ChekingCode : MonoBehaviour
+public class CheckingCode : MonoBehaviour
 {
     public int i = 0;
     public int q = 0;
