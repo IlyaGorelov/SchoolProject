@@ -417,7 +417,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * sprintSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.velocity;
+                Vector3 velocity = rb.linearVelocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -455,7 +455,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.velocity;
+                Vector3 velocity = rb.linearVelocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);

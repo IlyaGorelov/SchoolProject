@@ -24,7 +24,7 @@ public class ToSolution : MonoBehaviour
         TextInputLMB.SetActive(false);
         playerPosition.transform.position = playerNextPos.position;
         controller.playerCanMove = false;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.useGravity = false;
         Debug.Log("soluting..");
         controller.enableHeadBob = false;
